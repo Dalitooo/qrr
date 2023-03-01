@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #03001C;
+    background-size: 400% 400%;
+    animation: waving-colors 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  main {
+    flex: 1;
+  }
+  footer {
+    background-color:#03001C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+  }
+  h1 {
+    background: linear-gradient(to right, #f32170,#C850C0, #4158D0, #cf23cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 50px;
+    font-family:Arial, Helvetica;
+  }

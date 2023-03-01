@@ -1,0 +1,8 @@
+<p style="color:white">Please type the text you want to convert into a QR code </p>
+<textarea type="text" class="ta"[(ngModel)]="qrdata" cols="40" rows="1" style="background-color:white;color:black;resize:none"></textarea>
+<br>
+<br>
+<br>
+<qrcode (qrCodeURL)="onCodeChange($event)" width:1000 [qrdata]="qrdata" ></qrcode>
+<br> <br>
+<a style="font-weight: bold;" [href]="url" download class="bn5">Download QR Image</a>
