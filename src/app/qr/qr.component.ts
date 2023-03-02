@@ -6,13 +6,19 @@ import { SafeUrl } from '@angular/platform-browser';
   templateUrl: './qr.component.html',
   styleUrls: ['./qr.component.css']
 })
-
 export class QrComponent {
-  public qrdata="Type here...";
+  public qrdata="";
   url:SafeUrl='';
-  onCodeChange(url:SafeUrl){
-    this.url=url;
-
+  public buttonPressed=false;
+  public reset(){
+    this.qrdata="";
+    this.buttonPressed=!this.buttonPressed;
+  }
+  public onPressed(){
+    this.buttonPressed=!this.buttonPressed;
   }
 
+  onCodeChange(url:SafeUrl){
+    this.url=url;
+  }
 }
